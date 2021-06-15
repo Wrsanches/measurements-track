@@ -1,0 +1,47 @@
+scalar GraphQLDateTime
+
+type Subscription {
+  addDataPub: Document!
+  lastFiveDataPub: Graph!
+  countDataPub: Int!
+}
+
+type Query {
+  getRecordsCount(userId: Int!): Int!
+  getLastFiveMeasurements(userId: Int!): Graph!
+  getMeasurementsByPage(
+    symbol: String
+    weight: Float
+    userId: Int!
+    page: Int
+  ): Document!
+}
+
+type Mutation {
+  addMeasurement(weight: Float!, date: GraphQLDateTime!, userId: Int!): String!
+  updateMeasurement(
+    id: Int!
+    weight: Float!
+    userId: Int!
+    page: Int!
+  ): Document!
+  removeMeasurement(id: Int!, userId: Int!, page: Int!): Document!
+}
+
+type Graph {
+  labels: [String]!
+  datasets: [Float]!
+}
+
+type Document {
+  data: [Measurements]!
+  totalPages: Int!
+}
+
+type Measurements {
+  id: ID!
+  weight: String!
+  weighingDate: String!
+  createdAt: GraphQLDateTime!
+  updatedAt: GraphQLDateTime!
+}
