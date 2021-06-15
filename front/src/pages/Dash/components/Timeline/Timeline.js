@@ -136,9 +136,7 @@ const Timeline = () => {
     <Section>
       <TimelineHeader>
         <FormItem
-          helpText={
-            'Your search may contain the symbols "<", "<=", ">" or ">=" for easy tracking, e.g. >= 70.8, to find the values  greater and equals to 70.8.'
-          }
+          helpText='Your search may contain the symbols "<", "<=", ">" or ">=" for easy tracking, e.g. >= 70.8, to find the values  greater and equals to 70.8.'
           label="Search"
           name="search"
           onChange={handleSearch}
