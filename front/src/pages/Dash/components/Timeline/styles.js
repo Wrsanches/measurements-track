@@ -25,6 +25,10 @@ export const Line = styled.div`
   border-radius: 10px;
   background-color: ${pallete.darkGrey};
   position: absolute;
+
+  @media (max-width: 1024px) {
+    height: 142px;
+  }
 `;
 
 export const TimePoint = styled.div`
@@ -61,11 +65,23 @@ export const Card = styled.div`
   border: 1px solid ${pallete.grey};
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: 170px;
+    padding: 10px 10px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
 `;
 
 export const Item = styled.p`
   font-size: 12px;
   font-family: 'AvenirRegular';
+
+  @media (max-width: 1024px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Action = styled.div``;
@@ -75,6 +91,15 @@ export const EditInput = styled.input`
   height: 30px;
   border-radius: 5px;
   border: 1px solid ${pallete.grey};
+
+  @media (max-width: 1024px) {
+    border: none;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+    }
+  }
 `;
 
 export const Button = styled.button`

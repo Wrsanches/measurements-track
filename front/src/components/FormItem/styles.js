@@ -26,6 +26,10 @@ export const Input = styled.input`
     outline: none;
     border: 1px solid ${pallete.focus.input};
   }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 export const HelpText = styled.p`

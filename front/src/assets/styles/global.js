@@ -32,6 +32,9 @@ const GlobalStyle = createGlobalStyle`
 
   input {
     box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 `;
 

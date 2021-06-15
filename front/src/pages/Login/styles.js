@@ -38,4 +38,8 @@ export const Input = styled.input`
   &:focus {
     outline: none;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
