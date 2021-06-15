@@ -10,9 +10,6 @@ import { Line } from 'react-chartjs-2';
 // Redux
 import { useSelector } from 'react-redux';
 
-// PropTypes
-import PropTypes from 'prop-types';
-
 // GraphQL
 import { LAST_FIVE_DATA_PUB } from '../../../../graphql/subscriptions';
 import { GET_LAST_FIVE_MEASUREMENTS } from '../../../../graphql/queries';
@@ -73,10 +70,6 @@ const LineChart = () => {
       <Line data={dataset} options={options} />
     </Section>
   );
-};
-
-LineChart.propTypes = {
-  data: PropTypes.object.isRequired
 };
 
 export default LineChart;

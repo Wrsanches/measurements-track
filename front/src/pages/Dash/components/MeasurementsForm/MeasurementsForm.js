@@ -10,9 +10,6 @@ import { Button } from './styles';
 // Redux
 import { useSelector } from 'react-redux';
 
-// PropTypes
-import PropTypes from 'prop-types';
-
 // GraphQL
 import { ADD_MEASUREMENT } from '../../../../graphql/mutations';
 
@@ -84,12 +81,6 @@ const MeasurementsForm = () => {
       <Button onClick={() => handleSubmit()}>New</Button>
     </Section>
   );
-};
-
-MeasurementsForm.propTypes = {
-  formState: PropTypes.object.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
 };
 
 export default MeasurementsForm;

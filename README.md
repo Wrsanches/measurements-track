@@ -1,6 +1,6 @@
 # Front
 
-The project was built using [React](https://reactjs.org) v17.0.2 and [axios](https://github.com/axios/axios) for the communication between client and server.
+The project was built using [React](https://reactjs.org) v17.0.2 and [Apollo Client](https://www.npmjs.com/package/@apollo/client) for the communication between client and server.
 
 ### Dependencies
 

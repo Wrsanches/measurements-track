@@ -27,9 +27,6 @@ import { formatDate } from '../../../../utils/format';
 // Redux
 import { useSelector } from 'react-redux';
 
-// PropTypes
-import PropTypes from 'prop-types';
-
 // GraphQL
 import { ADD_DATA_PUB } from '../../../../graphql/subscriptions';
 import { GET_MEASUREMENTS_BY_PAGE } from '../../../../graphql/queries';
@@ -216,13 +213,6 @@ const Timeline = () => {
       </TimelineFooter>
     </Section>
   );
-};
-
-Timeline.propTypes = {
-  data: PropTypes.object.isRequired,
-  onPage: PropTypes.func.isRequired,
-  onSearch: PropTypes.func.isRequired,
-  page: PropTypes.number
 };
 
 export default Timeline;
